@@ -3,9 +3,9 @@ const pageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.site/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
+    { link: 'https://home.syou1ti.lol', label: '个人主页', highlight: true },
+    { link: 'https://blog.syou1ti.lol', label: 'Blog', highlight: true },
+    { link: 'mailto:dianeidelozierx@gmial.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -53,6 +53,17 @@ const workerConfig = {
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: '1.2.3.4:22',
+      tooltip: 'My production server SSH',
+      statusPageLink: 'https://example.com',
+      timeout: 5000,
+    },
+    {
+      id: 'test_tcp_monitor',
+      name: 'Blog',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: '107.173.15.196:22',
       tooltip: 'My production server SSH',
       statusPageLink: 'https://example.com',
       timeout: 5000,
